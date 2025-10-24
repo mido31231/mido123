@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://www.dhark.com/html5intro/html5-forms/Exercises/quiz.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>HTML5 Quiz</title>
+
+</head>
+<body>
+<h1>Quiz</h1>
+<form method="post" action="" id="quiz">
+	<ol>
+		<li>
+			<label for="q1">What color do you get when you mix red and yellow?</label>
+			<input type="color" name="q1" id="q1" required>
+		</li>
+		<li>
+			<label for="q2">What is the first primary number greater than 20?</label>
+			<input type="number" name="q2" id="q2" min="20" step="1" placeholder="Enter a number ≥ 20" required>
+		</li>
+		<li>
+			<label for="q3">Using exactly four 9s and no other digits, write an equation which evaluates to 100. You may use addition (+), subtraction (-), multiplication (*), and division (/). Do not include spaces.</label>
+			<input type="text" name="q3" id="q3" placeholder="Example: (99+9/9)" required>
+		</li>
+		<li>
+			<label for="q4">What date was John F. Kennedy assassinated?</label>
+			<input type="date" name="q4" id="q4" required>
+		</li>
+		<li>
+			<label for="q5">What is the world's most popular search engine?</label>
+			<input type="url" name="q5" id="q5" placeholder="https://www.example.com" required>
+		</li>
+	</ol>
+	<input type=submit value=submit >
+	<!--add bar showing percentage of valid (but not necessarily correct) answers-->
+	<!--add bar showing percentage of correct answers-->
+</form>
+
+
+</body></html>
