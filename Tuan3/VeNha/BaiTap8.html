@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Bat Family</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        #root{
+            width: 1024px;
+            text-align: center;
+            margin: 20px;
+        }
+        #site-header{
+            padding: 20px;
+            color: #FFFFFF;
+            background: grey;
+            text-shadow: 3px 5px 2px #474747;
+        }
+        #site-header img{
+            width: 75px;
+            margin-right: 10px;
+        }
+        .superheroes li{
+            display: inline-block;
+            width: 16%;
+            position: relative;
+        }
+        .superheroes img{
+            max-width: 100%;
+            border-radius: 15px;
+        }
+        .hero-header{
+            position: absolute;
+            height: 25%;
+            width: 100%;
+            line-height: 45px;
+            border-radius: 15px 15px 0 0;
+            color: rgba(255,255,255,0.8);
+            text-shadow: 2px 2px 4px black;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: black;
+            opacity: 50%
+        }
+        .superheroes a {
+            display: none;
+            width: 100%;
+            color: #333;
+            text-decoration: none;
+            background-color: #999;
+            padding: 8px 0;
+            margin-top: 5px;
+            border-radius: 3px;
+        }
+        .superheroes li:hover{
+            transform: scale(1.3); /* to hơn rõ rệt */
+            z-index: 10; 
+        }
+        .superheroes a:hover {
+            text-decoration: underline;
+            color: black;
+            display: inline-block;
+        }
+        .superheroes li:hover a {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <h1 id="site-header"><span><img src="imgs\logo.png"></img>The Bat family<span></h1>
+        <ul class="superheroes">
+            <li>
+                <strong class="hero-header">Batman</strong>
+                <img src="imgs/superhero-1.jpg" alt="">
+                <a href="https://en.wikipedia.org/wiki/Batman">Read more</a>
+            </li>
+            <li>
+                <strong class="hero-header">Batwing</strong>
+                <img src="imgs/superhero-2.jpg" alt="">
+                <a href="https://en.wikipedia.org/wiki/Batwing_(DC_Comics)">Read more</a>
+            </li>
+            <li>
+                <strong class="hero-header">Batgirl</strong>
+                <img src="imgs/superhero-3.jpg" alt="">
+                <a href="https://en.wikipedia.org/wiki/Batgirl">Read more</a>
+            </li>
+            <li>
+                <strong class="hero-header">Nightwing</strong>
+                <img src="imgs/superhero-4.jpg" alt="">
+                <a href="https://en.wikipedia.org/wiki/Nightwing">Read more</a>
+            </li>
+            <li>
+                <strong class="hero-header">Red Robin</strong>
+                <img src="imgs/superhero-5.jpg" alt="">
+                <a href="https://en.wikipedia.org/wiki/Red_Robin_(comics)">Read more</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
