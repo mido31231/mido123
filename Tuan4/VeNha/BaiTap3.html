@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT1Tuan4</title>
+    <style>
+        :root {
+            --animate-duration: 3s;
+            --animate-delay: 1s;
+            --animate-repeat: 1;
+        }  
+                
+        .animate__animated{
+            animation-duration: var(--animate-duration);
+            animation-fill-mode: both;
+        }
+
+        @keyframes jackInTheBox {
+            from {
+                opacity: 0;
+                -webkit-transform: scale(0.1) rotate(30deg);
+                transform: scale(0.1) rotate(30deg);
+                -webkit-transform-origin: center bottom;
+                transform-origin: center bottom;
+            }
+
+            50% {
+                -webkit-transform: rotate(-10deg);
+                transform: rotate(-10deg);
+            }
+
+            70% {
+                -webkit-transform: rotate(3deg);
+                transform: rotate(3deg);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+        .animate__jackInTheBox {
+            -webkit-animation-name: jackInTheBox;
+            animation-name: jackInTheBox;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animate__fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+        }
+
+        @keyframes rotateInDownLeft {
+            from {
+                -webkit-transform: rotate3d(0, 0, 1, -45deg);
+                transform: rotate3d(0, 0, 1, -45deg);
+                opacity: 0;
+            }
+
+            to {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+            }
+        }
+        .animate__rotateInDownLeft {
+            -webkit-animation-name: rotateInDownLeft;
+            animation-name: rotateInDownLeft;
+            -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="animate__animated animate__jackInTheBox">Khoa CNTTKD</h1>
+    <h1 class="animate__animated animate__fadeIn">Khoa CNTTKD</h1>
+    <h1 class="animate__animated animate__rotateInDownLeft">Khoa CNTTKD</h1>
+</body>
+</html>
